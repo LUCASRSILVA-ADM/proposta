@@ -79,14 +79,14 @@ const App: React.FC = () => {
   return (
     <div className="bg-[#f9f9f7] text-[#1a1a1a] min-h-screen overflow-x-hidden selection:bg-[#b39359] selection:text-white">
       {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full z-[100] px-6 py-5 md:px-12 md:py-10 flex justify-between items-center pointer-events-none">
+      <header className="fixed top-0 left-0 w-full z-[100] px-4 md:px-12 py-5 md:py-10 flex justify-between items-center pointer-events-none">
         <div className="text-[#b39359] font-black tracking-tighter text-2xl md:text-3xl pointer-events-auto select-none uppercase">2LUCASFILM</div>
         <div className="flex gap-2 pointer-events-auto">
           {['es', 'pt'].map((l) => (
             <button 
               key={l}
               onClick={() => setLang(l as 'es' | 'pt')}
-              className={`w-10 h-10 md:w-12 md:h-12 rounded-full text-[9px] md:text-[10px] font-black border transition-all duration-500 flex items-center justify-center ${lang === l ? 'bg-[#b39359] text-white border-[#b39359] shadow-xl scale-110' : 'bg-white/90 border-black/5 text-black hover:bg-white hover:scale-105'}`}
+              className={`w-9 h-9 md:w-12 md:h-12 rounded-full text-[9px] md:text-[10px] font-black border transition-all duration-500 flex items-center justify-center ${lang === l ? 'bg-[#b39359] text-white border-[#b39359] shadow-xl scale-110' : 'bg-white/90 border-black/5 text-black hover:bg-white hover:scale-105'}`}
             >
               {l.toUpperCase()}
             </button>
@@ -112,8 +112,8 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 relative flex justify-center items-center h-[400px] md:h-[500px] lg:h-screen">
-          <div className="relative group perspective-1000 scale-[0.55] sm:scale-80 lg:scale-100">
+        <div className="w-full lg:w-1/2 relative flex justify-center items-center h-[350px] md:h-[500px] lg:h-screen">
+          <div className="relative group perspective-1000 scale-[0.45] sm:scale-75 lg:scale-100">
             {PLATFORM_LOGOS.map((logo, i) => (
               <div key={logo.id} className={`orbit-platform platform-${i+1} bg-white shadow-2xl p-4 md:p-5 flex items-center justify-center border border-black/5`}>
                 <img src={logo.url} alt={logo.id} className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500" />
