@@ -79,7 +79,7 @@ const App: React.FC = () => {
   return (
     <div className="bg-[#f9f9f7] text-[#1a1a1a] min-h-screen overflow-x-hidden selection:bg-[#b39359] selection:text-white">
       {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full z-[100] px-4 md:px-12 py-5 md:py-10 flex justify-between items-center pointer-events-none">
+      <header className="fixed top-0 left-0 w-full z-[100] px-6 py-5 md:px-12 md:py-10 flex justify-between items-center pointer-events-none">
         <div className="text-[#b39359] font-black tracking-tighter text-2xl md:text-3xl pointer-events-auto select-none uppercase">2LUCASFILM</div>
         <div className="flex gap-2 pointer-events-auto">
           {['es', 'pt'].map((l) => (
