@@ -1,0 +1,8 @@
+{
+  "name": "Bariloche Elite - Estrategia Visual",
+  "description": "Pitch de alto impacto para hotelería de lujo en Bariloche. Enfoque en reservas directas, independencia de OTAs y ROI visual para el público brasileño.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

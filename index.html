@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2LUCASFILM | Estratégia Visual Patagônica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #b39359;
+            --bg: #f9f9f7;
+            --text: #1a1a1a;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+        .font-serif { font-family: 'Cormorant Garamond', serif; }
+        
+        .hero-title {
+            font-size: clamp(2.2rem, 8vw, 5.5rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #967a4a;
+            transform: translateY(-2px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--gold); }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react/": "https://esm.sh/react@^19.2.4/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
