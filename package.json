@@ -1,8 +1,8 @@
 
 {
-  "name": "bariloche-elite-estrategia-visual",
+  "name": "2lucasfilm-presentation",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,8 +15,6 @@
     "@google/genai": "^1.3.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
     "typescript": "^5.0.0",
     "vite": "^6.0.0"
   }
